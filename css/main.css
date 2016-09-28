@@ -31,8 +31,18 @@ a, a:hover, a:focus, .btn:focus {
     outline: none;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Open Sans', sans-serif;
     color: #252525;
 }
@@ -695,7 +705,7 @@ ul.external li a:hover {
 }
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(../img/slider/desk.jpg);
     padding: 0;
 }
 
