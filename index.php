@@ -267,33 +267,6 @@
 							<p>Need to reach me?</p>
 						</div>
 
-            <?php
-            require_once "Mail.php";
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-              $host = "andywhinh@gmail.com";
-              $username = "smtp.gmail.com";
-              $password = "";
-              $name=$_POST['name'];
-              $email=$_POST['email'];
-              $body=$_POST['message'];
-              if (($name=="")||($email=="")||($message=="")) {
-                echo "All fields are required, please fill <a href=\"\">the form</a> again.<br />";
-              } else{
-                $subject="Message sent using your contact form";
-                $headers = array ('From' => $from,
-                  'To' => $to,
-                  'Subject' => $subject);
-                $smtp = Mail::factory('smtp',
-                  array ('host' => $host,
-                    'auth' => true,
-                    'username' => $username,
-                    'password' => $password));
-                $mail = $smtp->send($to, $headers, $body);
-                echo "Email sent! <br />";
-              }
-            }
-            ?>
-
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
 							<form action="" method="POST">
 								<div class="input-field">
@@ -308,6 +281,33 @@
 						      <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>
 						</div>
+
+            <?php
+            require_once "Mail.php";
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+              $host = "andywhinh@gmail.com";
+              $username = "smtp.gmail.com";
+              $password = "";
+              $name=$_POST['name'];
+              $email=$_POST['email'];
+              $body=$_POST['message'];
+              if (($name=="")||($email=="")||($message=="")) {
+                echo "All fields are required, please fill <a href=\"\">the form</a> again.<br />";
+              } else {
+                $subject="Message sent using your contact form";
+                $headers = array ('From' => $from,
+                  'To' => $to,
+                  'Subject' => $subject);
+                $smtp = Mail::factory('smtp',
+                  array ('host' => $host,
+                    'auth' => true,
+                    'username' => $username,
+                    'password' => $password));
+                $mail = $smtp->send($to, $headers, $body);
+                echo "Email sent! <br />";
+              }
+            }
+            ?>
 
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
