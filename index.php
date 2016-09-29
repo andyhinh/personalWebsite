@@ -268,23 +268,12 @@
 						</div>
 
             <?php
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-              $name=$_POST['name'];
-              $email=$_POST['email'];
-              $message=$_POST['message'];
-              if (($name=="")||($email=="")||($message=="")) {
-                echo "All fields are required, please fill <a href=\"\">the form</a> again.<br />";
-              } else{
-                $from="From: $name<$email>\r\nReturn-path: $email";
-                $subject="Message sent using your contact form";
-                mail("me@andyhinh.com", $subject, $message, $from);
-                echo "Email sent! <br />";
-              }
-            }
+              $action=$_REQUEST['action'];
+              if ($action=="") {
             ?>
 
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="" method="post">
+							<form action="" method="POST" enctype="multipart/form-data">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -296,6 +285,23 @@
 								</div>
 						      <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>
+
+              <?php
+                }
+              else {
+                $name=$_REQUEST['name'];
+                $email=$_REQUEST['email'];
+                $message=$_REQUEST['message'];
+                if (($name=="")||($email=="")||($message=="")) {
+                    echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+                } else {
+                    $from="From: $name<$email>\r\nReturn-path: $email";
+                    $subject="Message sent using your contact form";
+                    mail("me@andyhinh.com", $subject, $message, $from);
+                    echo "Email sent!";
+                }
+              }
+            ?>
 						</div>
 
 						<div class="col-md-5 wow animated fadeInRight">
@@ -311,25 +317,25 @@
 			</section>
 
 		</main>
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Google Map API -->
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Fullscreen slider -->
-        <script src="js/jquery.slitslider.js"></script>
-        <script src="js/jquery.ba-cond.min.js"></script>
-		<!-- onscroll animation -->
-        <script src="js/wow.min.js"></script>
-		<!-- Custom Functions -->
-        <script src="js/main.js"></script>
+      <script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Twitter Bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+	<!-- Single Page Nav -->
+      <script src="js/jquery.singlePageNav.min.js"></script>
+	<!-- jquery.fancybox.pack -->
+      <script src="js/jquery.fancybox.pack.js"></script>
+	<!-- Google Map API -->
+	    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!-- Owl Carousel -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- jquery easing -->
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- Fullscreen slider -->
+      <script src="js/jquery.slitslider.js"></script>
+      <script src="js/jquery.ba-cond.min.js"></script>
+	<!-- onscroll animation -->
+      <script src="js/wow.min.js"></script>
+	<!-- Custom Functions -->
+      <script src="js/main.js"></script>
     </body>
 </html>
