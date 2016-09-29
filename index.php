@@ -268,8 +268,7 @@
 						</div>
 
             <?php
-            $action=$_REQUEST['action'];
-            if ($action=="")    /* display the contact form */
+            if ($_SERVER['REQUEST_METHOD'] === 'POST')    /* display the contact form */
                 {
             ?>
 
@@ -293,9 +292,9 @@
             else                /* send the submitted data */
                 {
                 echo "yolo";
-                $name=$_REQUEST['name'];
-                $email=$_REQUEST['email'];
-                $message=$_REQUEST['message'];
+                $name=$_POST['name'];
+                $email=$_POST['email'];
+                $message=$_POST['message'];
                 if (($name=="")||($email=="")||($message==""))
                     {
             		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
