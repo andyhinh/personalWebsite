@@ -200,7 +200,7 @@
 
 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="portfolio-item">
-								<img src="img/portfolio/CodeRED.png" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+								<img src="img/portfolio/CodeRED.png" class="img-responsive" alt="CodeRED is Houston's Premier Hackathon and Innovation Event. It's a place for students to learn something new, explore possibilities, solve problems, and build out their dreams.">
 								<figcaption class="mask">
 									<h3>CodeRED Website</h3>
 									<p>Manage and update the website consistently</p>
@@ -211,7 +211,7 @@
 							</li>
 
 							<li class="portfolio-item">
-								<img src="img/portfolio/Pros.svg" class="img-responsive" alt="Used React Native.">
+								<img src="img/portfolio/Pros.svg" class="img-responsive" alt="Used React Native in a team of 4 interns. Created a mobile app that would allow groups to vote on where to eat.">
 								<figcaption class="mask">
 									<h3>Your Own Lunch Optimizer</h3>
 									<p>An mobile app that allows groups to vote on where to eat.</p>
@@ -268,12 +268,34 @@
 						</div>
 
             <?php
-              $action=$_REQUEST['action'];
-              if ($action=="") {
+            require_once "Mail.php";
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+              $host = "andywhinh@gmail.com";
+              $username = "smtp.gmail.com";
+              $password = "";
+              $name=$_POST['name'];
+              $email=$_POST['email'];
+              $body=$_POST['message'];
+              if (($name=="")||($email=="")||($message=="")) {
+                echo "All fields are required, please fill <a href=\"\">the form</a> again.<br />";
+              } else{
+                $subject="Message sent using your contact form";
+                $headers = array ('From' => $from,
+                  'To' => $to,
+                  'Subject' => $subject);
+                $smtp = Mail::factory('smtp',
+                  array ('host' => $host,
+                    'auth' => true,
+                    'username' => $username,
+                    'password' => $password));
+                $mail = $smtp->send($to, $headers, $body);
+                echo "Email sent! <br />";
+              }
+            }
             ?>
 
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="" method="POST" enctype="multipart/form-data">
+							<form action="" method="POST">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -285,23 +307,6 @@
 								</div>
 						      <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>
-
-              <?php
-                }
-              else {
-                $name=$_REQUEST['name'];
-                $email=$_REQUEST['email'];
-                $message=$_REQUEST['message'];
-                if (($name=="")||($email=="")||($message=="")) {
-                    echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-                } else {
-                    $from="From: $name<$email>\r\nReturn-path: $email";
-                    $subject="Message sent using your contact form";
-                    mail("me@andyhinh.com", $subject, $message, $from);
-                    echo "Email sent!";
-                }
-              }
-            ?>
 						</div>
 
 						<div class="col-md-5 wow animated fadeInRight">
