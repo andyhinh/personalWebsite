@@ -49,99 +49,85 @@
         </div>
       </header>
 
-		<main class="site-content" role="main">
+  		<main class="site-content" role="main">
 
-		<section id="home-slider">
-            <div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-
-						<div class="bg-img bg-img-1"></div>
-
-						<div class="slide-caption">
-              <div class="caption-content">
-                <h2 class="animated fadeInDown">Andy Hinh</h2>
-                <span class="animated fadeInDown">Programmer | Organizer | Tech Evangelist | Foodie</span>
-                <a href="./src/AndyHinhResume.pdf" class="btn btn-blue btn-effect">Resume</a>
+  		<section id="home-slider">
+        <div id="slider" class="sl-slider-wrapper">
+  				<div class="sl-slider">
+  					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+  						<div class="bg-img bg-img-1"></div>
+  						<div class="slide-caption">
+                <div class="caption-content">
+                  <h2 class="animated fadeInDown">Andy Hinh</h2>
+                  <span class="animated fadeInDown">Programmer | Organizer | Tech Evangelist | Foodie</span>
+                  <a href="./src/AndyHinhResume.pdf" class="btn btn-blue btn-effect">Resume</a>
+                </div>
               </div>
-            </div>
+  					</div>
 
-					</div>
-
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-
-						<div class="bg-img bg-img-2"></div>
-						<div class="slide-caption">
-              <div class="caption-content">
-                <h2>Food Blog</h2>
-                <span class="animated fadeInDown">I write about and take pictures of various foods</span>
-                <a href="#" class="btn btn-blue btn-effect">Coming Soon</a>
+  					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+  						<div class="bg-img bg-img-2"></div>
+  						<div class="slide-caption">
+                <div class="caption-content">
+                  <h2>Food Blog</h2>
+                  <span class="animated fadeInDown">I write about and take pictures of various foods</span>
+                  <a href="#" class="btn btn-blue btn-effect">Coming Soon</a>
+                </div>
               </div>
-            </div>
+  					</div>
 
-					</div>
+  				</div>
 
-				</div>
-
-        <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-          <a href="javascript:;" class="sl-prev">
-            <i class="fa fa-angle-left fa-3x"></i>
-          </a>
-          <a href="javascript:;" class="sl-next">
-            <i class="fa fa-angle-right fa-3x"></i>
-          </a>
-        </nav>
+          <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+            <a href="javascript:;" class="sl-prev">
+              <i class="fa fa-angle-left fa-3x"></i>
+            </a>
+            <a href="javascript:;" class="sl-next">
+              <i class="fa fa-angle-right fa-3x"></i>
+            </a>
+          </nav>
 
 
-				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
-					<span class="nav-dot-current"></span>
-					<span></span>
-				</nav>
+  				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+  					<span class="nav-dot-current"></span>
+  					<span></span>
+  				</nav>
 
-			</div>
-		</section>
-    <!--
-    <div class="home-divider divider">
-      <svg width="100%" height="100%" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <polyline points="0,0 100,100 100,0"></polyline>
-      </svg>
-    </div>
-  -->
+  			</div>
+  		</section>
 
-			<section id="about" >
-				<div class="container">
-					<div class="row">
+  		<section id="about" >
+  			<div class="container">
+  				<div class="row">
             <div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-1 wow animated fadeInRight">
-							<div class="profile">
+  						<div class="profile">
 
-									<img src="img/Andy.jpg" class="pull-left" alt="Andy Hinh">
-						  </div>
-						</div>
-						<div class="col-md-6 col-xs-12 wow animated fadeInLeft">
+  								<img src="img/Andy.jpg" class="pull-left" alt="Andy Hinh">
+  					  </div>
+  					</div>
+  					<div class="col-md-6 col-xs-12 wow animated fadeInLeft">
               <h3>Andy Hinh</h3>
-							<div class="recent-works">
-								<div id="works">
+  						<div class="recent-works">
+  							<div id="works">
                   <div class="work-item">
                     <p>I am the Microsoft Representative at the University of Houston, Director of Code<font color="red">RED</font> Hackathon, and the Regional Organizer and Lead Tech Evangelist for CodeDay.</p>
-									</div>
+  								</div>
                   <div class="work-item">
                     <p>I am a junior at the University of Houston studying Computer Science with a minor in Mathemathics.</p>
-									</div>
-									<div class="work-item">
+  								</div>
+  								<div class="work-item">
                     <p>My hobbies are programming, working out, hanging out with friends, drinking coffee, and eating food.</p>
-									</div>
-									<div class="work-item">
+  								</div>
+  								<div class="work-item">
                     <p>I like to discover new food and travel :)
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end about section -->
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+  		<!-- end about section -->
 
       <!-- experience section -->
       <section id="experience">
@@ -292,7 +278,7 @@
               } else{
                 $from="From: $name<$email>\r\nReturn-path: $email";
                 $subject="Message sent using your contact form";
-                mail("me@andyhinh.com", $subject, $message, $from);
+                mail("andywhinh@gmail.com", $subject, $message, $from);
                 echo "Email sent! <br />";
               }
             }
