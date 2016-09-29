@@ -268,7 +268,7 @@
 						</div>
 
             <?php
-            if ($_SERVER['REQUEST_METHOD'] === 'POST')    /* display the contact form */
+            if ($_SERVER['REQUEST_METHOD'] === 'GET')    /* display the contact form */
                 {
             ?>
 
