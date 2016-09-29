@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Andy Hinh | Programmer &amp; Foodie</title>
-      <meta name="description" content="Blue One Page Creative HTML5 Template">
+      <meta name="description" content="Andy Hinh | Computer Science, Organizer, Foodie">
       <meta name="keywords" content="personal portfolio website">
       <meta name="author" content="Andy Hinh">
       <meta name="designer" content="Themefisher">
