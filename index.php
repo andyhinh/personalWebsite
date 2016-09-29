@@ -274,7 +274,7 @@
             ?>
 
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="/" method="post">
+							<form action="" method="post">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
