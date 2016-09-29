@@ -267,22 +267,6 @@
 							<p>Need to reach me?</p>
 						</div>
 
-            <?php
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-              $name=$_POST['name'];
-              $email=$_POST['email'];
-              $message=$_POST['message'];
-              if (($name=="")||($email=="")||($message=="")) {
-                echo "All fields are required, please fill <a href=\"\">the form</a> again.<br />";
-              } else{
-                $from="From: $name<$email>\r\nReturn-path: $email";
-                $subject="Message sent using your contact form";
-                mail("me@andyhinh.com", $subject, $message, $from);
-                echo "Email sent! <br />";
-              }
-            }
-            ?>
-
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
 							<form action="" method="POST">
 								<div class="input-field">
@@ -297,6 +281,22 @@
 						      <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>
 						</div>
+
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+              $name=$_POST['name'];
+              $email=$_POST['email'];
+              $message=$_POST['message'];
+              if (($name=="")||($email=="")||($message=="")) {
+                echo "All fields are required, please fill the form again.<br />";
+              } else{
+                $from="From: $name<$email>\r\nReturn-path: $email";
+                $subject="Message sent using your contact form";
+                mail("me@andyhinh.com", $subject, $message, $from);
+                echo "Email sent! <br />";
+              }
+            }
+            ?>
 
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
