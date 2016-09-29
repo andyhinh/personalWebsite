@@ -292,6 +292,7 @@
                 }
             else                /* send the submitted data */
                 {
+                echo "yolo";
                 $name=$_REQUEST['name'];
                 $email=$_REQUEST['email'];
                 $message=$_REQUEST['message'];
