@@ -4,12 +4,12 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Andy Hinh | Programmer &amp; Foodie</title>
-      <meta name="description" content="Andy Hinh | Computer Science, Organizer, Foodie">
+      <title>Andy Hinh | Programmer, Organizer &amp; Foodie</title>
+      <meta name="description" content="I'm a Programmer and Foodie.">
       <meta name="keywords" content="personal portfolio website">
       <meta name="author" content="Andy Hinh">
       <meta name="designer" content="Themefisher">
-      <meta property="og:image" content="./img/Andy.jpg">
+      <meta name="og:image" content="./img/Andy.jpg">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/font-awesome.min.css">
