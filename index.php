@@ -9,7 +9,7 @@
       <meta name="keywords" content="personal portfolio website">
       <meta name="author" content="Andy Hinh">
       <meta name="designer" content="Themefisher">
-      <meta name="image" content="./img/Andy.jpg">
+      <meta name="image" content="./img/Andy2.jpg">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/font-awesome.min.css">
