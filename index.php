@@ -60,7 +60,7 @@
                 <div class="caption-content">
                   <h2 class="animated fadeInDown">Andy Hinh</h2>
                   <span class="animated fadeInDown">Programmer | Organizer | Tech Evangelist | Foodie</span>
-                  <a href="./src/AndyHinhResume.pdf" class="btn btn-blue btn-effect">Resume</a>
+                  <a href="./AndyHinhResume.pdf" class="btn btn-blue btn-effect">Resume</a>
                 </div>
               </div>
   					</div>
