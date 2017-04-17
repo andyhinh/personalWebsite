@@ -287,7 +287,6 @@
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Information</h3>
-								<!--<p><i class="fa fa-phone"></i>Phone: (832) 331-9772 </p>-->
 								<p><i class="fa fa-envelope"></i>me@andyhinh.com</p>
 							</address>
 						</div>
