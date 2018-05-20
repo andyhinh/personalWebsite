@@ -20,6 +20,18 @@
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/main.css">
       <script src="js/modernizr-2.6.2.min.js"></script>
+			<script type="text/javascript">
+    var vglnk = { key: 'b8a1203553ae54cca28e98a95e2e1588' };
+
+    (function(d, t) {
+        var s = d.createElement(t);
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0];
+            r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>
     </head>
 
     <body id="body">
