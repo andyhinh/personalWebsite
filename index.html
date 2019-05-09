@@ -71,7 +71,8 @@
   						<div class="slide-caption">
                 <div class="caption-content">
                   <h2 class="animated fadeInDown">Andy Hinh</h2>
-                  <span class="animated fadeInDown">Programmer | Organizer | Tech Evangelist | Foodie</span>
+									<span class="animated fadeInDown">Programmer | Foodie</span>
+									<span class="animated fadeInDown">*New Site in Development :)*</span>
                   <a href="./AndyHinhResume.pdf" class="btn btn-blue btn-effect">Resume</a>
                 </div>
               </div>
@@ -108,7 +109,7 @@
   			</div>
   		</section>
 
-  		<section id="about" >
+  		<!-- <section id="about" >
   			<div class="container">
   				<div class="row">
             <div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-1 wow animated fadeInRight">
@@ -122,7 +123,7 @@
   						<div class="recent-works">
   							<div id="works">
                   <div class="work-item">
-                    <p>I am the Microsoft Representative at the University of Houston, Director of Code<font color="red">RED</font> Hackathon, and the Regional Organizer and Lead Tech Evangelist for CodeDay.</p>
+                    <p>I am a software developer and a consultant at Credera.</p>
   								</div>
                   <div class="work-item">
                     <p>I am a junior at the University of Houston studying Computer Science with a minor in Mathemathics.</p>
@@ -138,11 +139,11 @@
   					</div>
   				</div>
   			</div>
-  		</section>
+  		</section> -->
   		<!-- end about section -->
 
       <!-- experience section -->
-      <section id="experience">
+      <!-- <section id="experience">
         <div class="container">
           <div class="row">
 
@@ -183,11 +184,11 @@
 
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- end experience section -->
 
 			<!-- portfolio section -->
-			<section id="portfolio">
+			<!-- <section id="portfolio">
 				<div class="container">
 					<div class="row">
 
@@ -229,11 +230,11 @@
 						</ul>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- end portfolio section -->
 
 			<!-- Social section -->
-			<section id="social" class="parallax">
+			<!-- <section id="social" class="parallax">
 				<div class="overlay">
 					<div class="container">
 						<div class="row">
@@ -252,51 +253,20 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- end Social section -->
 
 			<!-- Contact section -->
-			<section id="contact" >
+			<!-- <section id="contact" >
 				<div class="container">
 					<div class="row">
 
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Contact</h2>
-							<p>Need to reach me?</p>
+							<p><i class="fa fa-envelope"></i> me@andyhinh.com</p>
 						</div>
 
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="" method="POST">
-								<div class="input-field">
-									<input type="text" name="name" class="form-control" placeholder="Your Name...">
-								</div>
-								<div class="input-field">
-									<input type="email" name="email" class="form-control" placeholder="Your Email...">
-								</div>
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-						      <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-							</form>
-						</div>
-
-            <?php
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-              $name=$_POST['name'];
-              $email=$_POST['email'];
-              $message=$_POST['message'];
-              if (($name=="")||($email=="")||($message=="")) {
-                echo "All fields are required, please fill the form again.<br />";
-              } else{
-                $from="From: $name<$email>\r\nReturn-path: $email";
-                $subject="Message sent using your contact form";
-                mail("andywhinh@gmail.com", $subject, $message, $from);
-                echo "Email sent! <br />";
-              }
-            }
-            ?>
-
-						<div class="col-md-5 wow animated fadeInRight">
+					 	<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Information</h3>
 								<p><i class="fa fa-envelope"></i>me@andyhinh.com</p>
@@ -305,7 +275,7 @@
 
 					</div>
 				</div>
-			</section>
+			</section>  -->
 
 		</main>
       <script src="js/jquery-1.11.1.min.js"></script>
